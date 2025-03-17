@@ -889,6 +889,7 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
     race: Attribute.String;
     freeRoamer: Attribute.Boolean;
     origin: Attribute.String;
+    homeFoundText: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

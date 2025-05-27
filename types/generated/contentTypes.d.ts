@@ -889,7 +889,7 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
     race: Attribute.String;
     freeRoamer: Attribute.Boolean;
     origin: Attribute.String;
-    homeFoundArticle: Attribute.Component<'article-section.image', true>;
+    homeFoundArticle: Attribute.Component<'article-section.text-with-image-section'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

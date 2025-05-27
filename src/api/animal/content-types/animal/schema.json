@@ -109,8 +109,8 @@
     },
     "homeFoundArticle": {
       "type": "component",
-      "repeatable": true,
-      "component": "article-section.image"
+      "repeatable": false,
+      "component": "article-section.text-with-image-section"
     }
   }
 }

@@ -107,8 +107,10 @@
     "origin": {
       "type": "string"
     },
-    "homeFoundText": {
-      "type": "text"
+    "homeFoundArticle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "article-section.image"
     }
   }
 }

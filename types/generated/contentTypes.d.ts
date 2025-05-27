@@ -889,7 +889,7 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
     race: Attribute.String;
     freeRoamer: Attribute.Boolean;
     origin: Attribute.String;
-    homeFoundText: Attribute.Text;
+    homeFoundArticle: Attribute.Component<'article-section.image', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1625,6 +1625,7 @@ export interface ApiTeammemberTeammember extends Schema.CollectionType {
     phone: Attribute.String;
     priority: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<0>;
     ehrenamtlich: Attribute.Boolean & Attribute.Required;
+    category: Attribute.Enumeration<['vorstand', 'ehrenamtlich', 'tierheim']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

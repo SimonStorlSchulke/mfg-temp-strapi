@@ -56,6 +56,18 @@ export interface ArticleSectionCounter extends Schema.Component {
   };
 }
 
+export interface ArticleSectionFile extends Schema.Component {
+  collectionName: 'components_article_section_files';
+  info: {
+    displayName: 'file';
+    description: '';
+  };
+  attributes: {
+    Datei: Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+      Attribute.Required;
+  };
+}
+
 export interface ArticleSectionHero extends Schema.Component {
   collectionName: 'components_article_section_heroes';
   info: {
@@ -209,6 +221,7 @@ declare module '@strapi/types' {
       'article-section.animal-cards': ArticleSectionAnimalCards;
       'article-section.button-link': ArticleSectionButtonLink;
       'article-section.counter': ArticleSectionCounter;
+      'article-section.file': ArticleSectionFile;
       'article-section.hero': ArticleSectionHero;
       'article-section.image': ArticleSectionImage;
       'article-section.news-cards': ArticleSectionNewsCards;

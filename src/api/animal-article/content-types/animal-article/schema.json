@@ -31,7 +31,8 @@
         "article-section.animal-cards",
         "article-section.button-link",
         "article-section.row-start",
-        "article-section.section-start"
+        "article-section.section-start",
+        "article-section.file"
       ]
     }
   }

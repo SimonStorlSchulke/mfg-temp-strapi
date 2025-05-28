@@ -935,7 +935,8 @@ export interface ApiAnimalArticleAnimalArticle extends Schema.CollectionType {
         'article-section.animal-cards',
         'article-section.button-link',
         'article-section.row-start',
-        'article-section.section-start'
+        'article-section.section-start',
+        'article-section.file'
       ]
     >;
     createdAt: Attribute.DateTime;
@@ -1015,7 +1016,8 @@ export interface ApiBlogBlog extends Schema.CollectionType {
         'article-section.image',
         'article-section.news-cards',
         'article-section.row-start',
-        'article-section.section-start'
+        'article-section.section-start',
+        'article-section.file'
       ]
     > &
       Attribute.Required;
@@ -1023,6 +1025,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     type: Attribute.Enumeration<['news', 'wissen', 'helferbericht', 'blog']>;
     thumbnail: Attribute.Media<'images'> & Attribute.Required;
     showAsPopup: Attribute.Boolean & Attribute.DefaultTo<false>;
+    priority: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1547,7 +1550,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'article-section.row-start',
         'article-section.section-start',
         'article-section.text-with-image-section',
-        'article-section.text'
+        'article-section.text',
+        'article-section.file'
       ]
     >;
     description: Attribute.String;

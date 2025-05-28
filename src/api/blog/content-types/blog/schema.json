@@ -27,7 +27,8 @@
         "article-section.image",
         "article-section.news-cards",
         "article-section.row-start",
-        "article-section.section-start"
+        "article-section.section-start",
+        "article-section.file"
       ],
       "required": true
     },
@@ -56,6 +57,11 @@
       "type": "boolean",
       "default": false,
       "required": false
+    },
+    "priority": {
+      "type": "integer",
+      "default": 0,
+      "required": true
     }
   }
 }
